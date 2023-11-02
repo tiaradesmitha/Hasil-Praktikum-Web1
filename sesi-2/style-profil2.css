@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.034),rgba(0, 0, 0, 0.034)), url(images/tiara\ .jpg);
+    font-family: 'Poppins', sans-serif;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+header{
+    position: absolute;
+    background: rgba(188, 197, 206, 0.712);
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    width: 100%;
+    box-sizing: border-box;
+    /* justify-content: space-between; */
+}
+
+header .logo{
+    color: #3230b8;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    float: left;
+}
+
+.logo{
+    height: 55px;
+    width: 55px;
+    background: transparent;
+    border: 2px solid #3230b8;
+    color: #3230b8;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+ }
+
+ .logo:hover{
+    background: #3230b8;
+    border: 2px solid white;
+    color: white;
+    transition: .3s;
+ }
+
+header nav{
+    float: right;
+}
+
+header nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li{
+    list-style: none;
+}
+
+header nav ul li a{
+    color: white;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+    text-decoration: none;
+    display: block;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active{
+    color: white;
+    background: #3230b8;
+}
+
+.menu-toggle{
+    color: #3230b8;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+/* responsive */
+
+@media screen and (max-width: 650px) {
+    header{
+        padding: 0 20px;
+    }
+
+    .menu-toggle{
+        display: block;
+    }
+
+    header nav{
+        position: absolute;
+        width: 30%;
+        height: calc(50vh - 75px);
+        background: #737386;
+        top: 55px;
+        right: -100%;
+        transition: 0.5s all;
+    }
+
+    header nav.active{
+        right: 0;
+    }
+    
+    header nav ul{
+        display: block;
+        text-align: center;
+    }
+    
+    header nav ul li a{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        color: rgba(225, 225, 225, 225);
+    }  
+}
+

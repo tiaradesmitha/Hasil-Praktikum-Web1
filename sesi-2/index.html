@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+        color: blue;
+        border: 2px solid red;
+        }
+
+        h1{
+            color: green;
+        }
+
+        .teks-merah {
+            font-size: 20px;
+            text-align: center;
+            background-color: black;
+        }
+
+        #teks-kuning {
+            font-size: 20px;
+            text-align: center;
+            background-color: black;
+        }
+
+        .teks-merah {
+            color: red;
+        }
+
+        #teks-kuning {
+            color: yellow;
+        }
+
+        div p {
+            color: red;
+        }
+
+        div > div > p {
+            font-weight: bold;
+        }
+
+        .subbagian {
+            font-size: 30px;
+        }
+
+        .subbagian.header {
+            color: blueviolet;
+        }
+
+        .subbagian#teks {
+            color: brown;
+        }
+
+        p:hover {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pemrograman Web 1</h1>
+    <p class="teks-merah">Praktek Pemograman web 1 sesi 2 akan membahas tentang penggunaan CSS</p>
+    <p id="teks-kuning">CSS atau Cascading style Sheets adalah sebuah bahasa yang digunakan untuk mengatur tampilan suatu halaman web</p>
+
+   <div>
+    <p>Ini adalah paragraf pertama.</p>
+    <div>
+        <p>Ini adalah paragraf kedua.</p>
+    </div>
+   </div>
+
+   <div>
+    <div class="subbagian header">Bagian header</div>
+    <p class="subbagian" id="teks">Ini adalah paragraf</p>
+   </div>
+
+</body>
+</html>

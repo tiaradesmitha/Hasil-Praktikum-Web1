@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-profil2.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo"><i class="fa-solid fa-t"></i></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about" class="active">About</a></li>
+                <li><a href="#services">Sevices</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <i class="fa fa-bars"></i>
+        </div>
+    </header>  
+
+    <div class="container">
+        <div class="hero-text">
+            <h3>Hello, there!</h3>
+            <h1>I'm <span>Tiara Desmitha</span></h1>
+            <p>I am a student at the Islamic University of Kalimantan. I am 19 years old, I was born on December 5, 2003 and live in Banjarmasin City. My hobbies are eating, singing, and cycling.</p>
+            <button type="button">More info . . .</button>
+            <div class="social">
+                <a class="btn" href="#">Check out my</a>
+                <a href="#"><i class="fa-brands fa-instagram" style="color: #3230b8;"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok" style="color: #3230b8;"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter" style="color: #3230b8;"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube" style="color: #3230b8;"></i></a>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <p>© 2023 Tiara Desmitha - All Rights Reserved.</p>
+        </div>
+    </div>
+</div>
+</section>
+
+    <script>
+        $(document).ready(function(){
+            $(".menu-toggle").click(function(){
+                $('nav').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+</html>
